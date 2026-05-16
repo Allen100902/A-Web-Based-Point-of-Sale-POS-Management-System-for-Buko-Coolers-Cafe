@@ -1,0 +1,153 @@
+body, html {
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    height: 100%; 
+}
+
+header {
+    justify-content: space-between; 
+    align-items: flex-start; 
+    background-color: #668b00;
+    padding: 10px;
+    color: white;
+    height: 100px; 
+    width: 100%; 
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .logo {
+    width: 150px;
+    height: auto;
+    margin-top: -60px; 
+    margin-left: 685px;
+    margin-right: 0px;
+}
+
+.header-left h1 {
+    color: white;
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+/* CSS for user information (Logged as) */
+.header-right {
+    position: fixed;
+    top: 120px;
+    right: 40px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+/* For side navigation */
+.side_nav {
+    height: calc(100vh - 120px); 
+    width: 290px;
+    position: fixed; 
+    top: 120px;
+    left: 0;
+    background-color: #F8F4E1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side_nav a {
+    padding: 33px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    display: block;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.dropdown_container {
+    display: none;
+    background-color: #F8F4E1;
+    padding-left: 8px;
+    text-indent: 2em;
+}
+
+.side_nav a:hover {
+    color: #99FF33;
+    font-weight: bold;
+    transition: none;
+}
+
+#navleft {
+    width: 290px;
+    transition: margin-left 0.5s;
+    padding: 16px; 
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 30px;
+    left: -5px;
+    z-index: 1; 
+    padding: 10px 30px; 
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button.sales-dropdown, button.reports-dropdown, button.product-dropdown, button.inventory-dropdown, button.maint-dropdown, button.archive-dropdown {
+    border: none;
+    background-color: #F8F4E1;
+    padding-left: 8px;
+    padding: 33px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Adjust button hover effect */
+button.sales-dropdown:hover, button.reports-dropdown:hover, button.product-dropdown:hover, button.inventory-dropdown:hover, button.maint-dropdown:hover, button.archive-dropdown:hover {
+    color: #99FF33; /* Highlight on hover */
+}
+
+/* Expanded dropdown content */
+.dropdown-container a {
+    padding: 8px 15px; /* Inner links padding */
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    display: block;
+}
+
+.dropdown-container a:hover {
+    background-color: white; /* Highlight background */
+    color: #99FF33; /* Change text color */
+}
+
+/* Media screens with max 640px */
+@media only screen and (max-width:640px) { 
+    header, .header-content{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+        position: relative;
+    }
+}

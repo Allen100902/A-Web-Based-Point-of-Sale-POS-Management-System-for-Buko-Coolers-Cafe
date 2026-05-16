@@ -1,0 +1,322 @@
+/* General CSS frontend design for Data Entry */
+.form_container {
+    position: fixed;
+    top: 200px;
+    left: 300px;
+    padding: 20px;
+    width: 80%;
+    max-height: 650px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.form_container h1 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form_container fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.form_container legend, .form_container_cat legend, .form_container_archive legend {
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+table, th, td {
+    border:1px solid black;
+}
+
+/* General CSS design for archive transactions */
+.form_container_archive {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    padding: 20px;
+    width: 50%;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.form_container_archive p {
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 25px;
+}
+
+.form_buttons_deact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* General CSS design for form Buttons */
+.form_buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.reset_btn, .confirm_deact, .return_prev, .take_action, .itemremove_cart, #itemadd_cart, #btnconfirm_order, #btnvoid_order, #btnpay_order {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* for "Clear Fields" and "Confirm Archive" button */
+.reset_btn, .confirm_deact {
+    background-color: #f8d7da;
+    color: #000;
+}
+
+.reset_btn:hover, .confirm_deact:hover {
+    background-color: red;
+    color: white;
+}
+
+/* for "Save and Return" and "Cancel Archive" button */
+.take_action, .return_prev {
+    background-color: darkgreen;
+    color: #000;
+}
+
+.take_action:hover, .return_prev:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Start of CSS frontend design for order_create.php only */
+.form_info_order2 {
+    position: static;
+    width: 470px;
+    height: 500px;
+}
+
+.form_info_order2 .form_row {
+    position: relative;
+    bottom: 18px;
+    font-size: 16px;
+}
+
+.form_info_order2 .form_row input {
+    font-size: 16px;
+}
+
+.form_info_order3 {
+    position: absolute;
+    width: 470px;
+    left: 540px;
+    top: 93px;
+    height: 500px;
+}
+
+.form_info_order3 table {
+    text-align: center;
+}
+
+.form_info_order3 .form_row {
+    font-size: 16px;
+}
+
+.pos_under {
+    position: fixed;
+    width: 470px;
+    right: 60px;
+    top: 294px;
+}
+
+.pos_under input, .pos_under select {
+    width: 170px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.form_info_order4 {
+    height: 500px;
+}
+
+.form_info_order4 .form_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.prod_avail_list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order_item {
+    width: 480px;
+    border-collapse: collapse;
+}
+
+.prod_avail_list thead th, .order_item thead th {
+    position: sticky;
+    top: 0;
+    background-color: green;
+    z-index: 3;
+    border: 1px solid #ddd;
+}
+
+.prod_avail_list th, .prod_avail_list td, .order_item th, .order_item td {
+    border: 1px solid #ddd;
+    padding: 2px;
+    text-align: left;
+}
+
+/* Start of CSS frontend design for inventory module add and edit only */
+.form_inventory {
+    height: 430px;
+}
+
+.form_inventory .form_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.form_inventory .form_row label {
+    flex: 1;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.form_inventory input, .form_inventory select {
+    flex: 2;
+    padding: 4px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: -70px;
+    height: 30px;
+}
+
+/* Start of CSS frontend design for product_add.php and product_edit.php only */
+.form_product {
+    height: 430px;
+}
+
+.form_product .form_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.form_product .form_row label {
+    flex: 1;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.form_product input, .form_product select {
+    flex: 2;
+    padding: 4px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: -70px;
+    height: 30px;
+}
+
+/* Start of CSS frontend design for product_category_add.php and product_category_edit.php only */
+.form_product_cat {
+    height: 200px;
+}
+
+.form_product_cat .form_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.form_product_cat .form_row label {
+    flex: 1;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.form_product_cat input, .form_product_cat select {
+    flex: 2;
+    padding: 4px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 15px;
+    height: 30px;
+}
+
+/* Start of CSS frontend design for user_add.php and user_edit.php only */
+.form_users {
+    height: 480px;
+}
+
+.form_users .form_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.form_users .form_row label {
+    flex: 1;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.form_users input, .form_users select {
+    flex: 2;
+    padding: 4px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 15px;
+    height: 30px;
+}
+
+/* Start of CSS frontend design for inventory_materials_add.php and inventory_materials_edit.php only */
+.form_inventory_materials {
+    height: 350px;
+}
+
+.form_inventory_materials .form_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.form_inventory_materials .form_row label {
+    flex: 1;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.form_inventory_materials input, .form_inventory_materials select {
+    flex: 2;
+    padding: 4px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 15px;
+    height: 30px;
+}

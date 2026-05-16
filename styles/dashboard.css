@@ -1,0 +1,121 @@
+.main {
+    display: flex;
+}
+
+.dashboard h1 {
+    position: relative;
+    left: 410px;
+    font-size: 30px;
+    top: 50px;
+}
+
+.total_sales_date_filter {
+    position: absolute;
+    margin-top: 130px;
+    right: 1280px;
+    z-index: 1;
+    border: 2px solid #000;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 247px;
+}
+
+.incoming_notifications {
+    position: absolute;
+    margin-top: 130px;
+    right: 670px;
+    z-index: 1;
+    border: 2px solid #000;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    width: 560px;
+    height: 247px;
+}
+
+.incoming_notifications ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.stock_level_rem {
+    position: absolute;
+    margin-top: 440px;
+    right: 830px;
+    z-index: 1;
+    border: 2px solid #000;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    width: 650px;
+    height: 280px;
+}
+
+.expiry_outstock_rem {
+    position: absolute;
+    margin-top: 440px;
+    right: 40px;
+    z-index: 1;
+    border: 2px solid #000;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    width: 740px;
+    height: 280px;
+}
+
+.sales_todate_prop {
+    position: absolute;
+    margin-top: 130px;
+    right: 40px;
+    z-index: 1;
+    border: 2px solid #000;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    width: 580px;
+    height: 247px;
+}
+
+.stock_rem, .month_sales, .expiry_outstock_tbl_rem, .sales_prop {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stock_rem thead, .expiry_rem thead, .expiry_outstock_tbl_rem thead, .sales_prop thead {
+    position: sticky;
+    top: 0;
+    background-color: green;
+    z-index: 3;
+    border: 1px solid #ccc;
+}
+
+.stock_rem th, .stock_rem td, .expiry_outstock_tbl_rem th, .expiry_outstock_tbl_rem td, .sales_prop th, .sales_prop td {
+    border: 1px solid #ccc;
+    padding: 11px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.stock_rem h2, .expiry_rem h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.total_sales_date_filter p {
+    left: 20px;
+    position: relative;
+    font-size: 30px;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+}

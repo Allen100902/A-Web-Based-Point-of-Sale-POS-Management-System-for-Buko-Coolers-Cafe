@@ -1,0 +1,179 @@
+/* General CSS frontend design for Data Viewing */
+/* Form Container */
+.form_container {
+    position: fixed;
+    top: 200px;
+    left: 300px;
+    padding: 20px;
+    width: 80%;
+    height: 600px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.form_container h1 {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.dataview a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Table Container with buttons and inputs above table (single row) */
+.table_container {
+    position: relative;
+    top: 65px;
+}
+
+.button_upper {
+    position: fixed;
+    top: 240px;
+    right: 65px;
+}
+
+/* Table Container with buttons and inputs above table (dual row) */
+.table_container_dual {
+    position: relative;
+    top: 35px;
+}
+
+/* Table Container with buttons below table */
+.table_container_nouppr {
+    position: relative;
+    top: 15px;
+    font-size: 16px;
+}
+
+.button_under {
+    position: fixed;
+    right: 65px;
+    bottom: 90px;
+}
+
+/* Table Container with search data and buttons above table */
+.table_container_search {
+    position: relative;
+    top: 15px;
+}
+
+.list_forms_upper, .form_container .form_row_order {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.list_forms_upper .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list_forms_upper .form_row label {
+    flex: 1;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.list_forms_upper input {
+    flex: 2;
+    padding: 8px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 7px;
+    /* width: 100px; */
+}
+
+.list_forms_upper label {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.list_forms_upper .form-row .form-side {
+    position: absolute;
+    align-items: center;
+    right: 25px;
+    top: 28px;
+}
+
+.list_forms_lower {
+    position: absolute;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+    right: 25px;
+}
+
+.list_forms_lower input {
+    flex: 2;
+    padding: 8px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 7px;
+    width: 300px;
+}
+
+.list_forms_lower label {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+#exportcsv, #exportreport, #prodadd, #searchdate, #usradd {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkgreen;
+    color: black;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#exportcsv:hover, #exportreport:hover, #prodadd:hover, #searchdate:hover, #usradd:hover {
+    background-color: green;
+    color: white;
+}
+
+.form-side a, .table_container_nouppr a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Start of CSS frontend design for table designs */
+.dataview {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dataview thead th {
+    border: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    background-color: #f4f4f4;
+    z-index: 3;
+    font-size: 16px;
+}
+
+.dataview th, .dataview td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+.dataview td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+ul {
+    list-style-type: none;
+}

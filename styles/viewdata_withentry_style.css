@@ -1,0 +1,44 @@
+/* Extra CSS codes for order_view.php and sales_report_view.php only */
+.form_container .form_row_order label, .form_row_order_dual label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form_row_order input {
+    padding: 4px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 2px;
+    width: 200px;
+}
+
+#prodprintstick, #prodprintrec {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkgreen;
+    color: black;
+    cursor: pointer;
+}
+
+.button_under a {
+    text-decoration: none;
+}
+
+#prodprintstick:hover, #prodprintrec:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Extra CSS codes for sales_report_view.php only */
+.form_row_order_dual input {
+    padding: 4px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 2px;
+    width: 135px;
+}

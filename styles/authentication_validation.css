@@ -1,0 +1,25 @@
+.auth_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.auth_box {
+    background: #668b00;
+    padding: 25px;
+    border-radius: 8px;
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.close_btn {
+    margin-left: 10px;
+}
